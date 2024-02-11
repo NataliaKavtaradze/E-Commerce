@@ -1,0 +1,91 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.widget{
+    background-color: #191C1F;
+    height: 80px;
+    width: 100%;
+    padding-left: 300px;
+    display: flex;
+    align-items: center;
+    }
+.black-wrapper{
+    width: 74px;
+    height: 40px;
+    background-color: #F3DE6D;
+    rotate: -3deg;
+    padding: 6px 10px 6px 10px;
+  }
+.black{
+    width: 54px;
+    height: 28px;
+    rotate: -3deg;
+    font-family: Public Sans;
+    font-weight: 600;
+    font-size: 20px;
+}
+.friday{
+    width: 72px;
+    height: 32px;
+    font-family: Public Sans;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFF;
+    margin-left: 10px;
+}
+.discount{
+    width: 180px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.up-to{
+font-family: Public Sans;
+font-weight: 500;
+font-size: 14px;
+color: #FFFF;
+}
+.procent{
+   font-family: Public Sans;
+   font-weight: 600;
+   font-size: 40px;
+   color: #EBC80C; 
+}
+.OFF{
+    font-family: Public Sans;
+    font-weight: 600;
+    size: 20px;
+    color: #FFFF;
+}
+.widget-button{
+   width: 156px;
+   height: 48px;
+   background-color: #EBC80C;
+   border-radius: 2px;
+   gap: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.label{
+    width: 80px;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 14px;
+    color:  #191C1F;
+}
+.close-button{
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    padding: 8px;
+    background-color:  #303639;
+    margin-left: auto;
+    margin-right: 10px;
+}
