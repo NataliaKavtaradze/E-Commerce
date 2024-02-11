@@ -89,3 +89,18 @@ color: #FFFF;
     margin-left: auto;
     margin-right: 10px;
 }
+.navigation{
+    /* padding-left: 300px;
+    padding-right: 300px; */
+}
+.top-nav{
+    height: 52px;
+    background-color: #1B6392;
+    padding: 12px 300px 12px 300px;
+}
+.top-nav h2{
+ font-family: Public sans;
+ font-weight: 400;
+ font-size: 14px;
+ color: #FFFF;
+}
