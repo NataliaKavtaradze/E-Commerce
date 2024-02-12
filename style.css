@@ -42,8 +42,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 410px;
+    margin-right: 410px;
 }
 .up-to{
 font-family: Public Sans;
@@ -97,10 +97,55 @@ color: #FFFF;
     height: 52px;
     background-color: #1B6392;
     padding: 12px 300px 12px 300px;
+    display: flex;
+    justify-content: space-between;
 }
 .top-nav h2{
  font-family: Public sans;
  font-weight: 400;
  font-size: 14px;
  color: #FFFF;
+}
+.left-content{
+    display: flex;
+    align-items: center;
+    width: 396px;
+    height: 28px;
+ }
+.follow-us{
+    width: 233px;
+    display: flex;
+    gap: 12px;
+}
+.follow-us span{
+    width: 116px;
+    font-family: Public Sans;
+    color: #FFFF;
+}
+.social-icons{
+    width: 156px;
+    gap: 12px;
+}
+.line{
+    width: 28px;
+    height: 1px;
+    border: 1px;
+    rotate: -90deg;
+    background-color: #FFFFFF;
+}
+.multi-language , .multi-currency{
+    width: 44px;
+    display: flex;
+    gap: 6px;
+}
+.multi-language span , .multi-currency span{
+    font-family: public Sans;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.middle-nav{
+    width: 100%;
+    height: 88px;
+    padding: 20px 300px;
+    background-color: #1B6392;
 }
