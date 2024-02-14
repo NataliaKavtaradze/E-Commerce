@@ -1,0 +1,306 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Public;
+}
+      /* header */
+a{
+  text-decoration: none;
+}
+.top-nav{
+    height: 52px;
+    background-color: #1B6392;
+    padding: 12px 300px 12px 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav h2{
+ font-family: Public sans;
+ font-weight: 400;
+ font-size: 14px;
+ color: #FFFF;
+}
+.left-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 396px;
+    height: 28px;
+ }
+.follow-us{
+    width: 233px;
+    display: flex;
+    gap: 12px;
+}
+.follow-us span{
+    width: 116px;
+    font-family: Public Sans;
+    color: #FFFF;
+}
+.social-icons{
+    width: 156px;
+    gap: 12px;
+}
+.line{
+    width: 28px;
+    height: 1px;
+    border: 1px;
+    rotate: -90deg;
+    background-color: #FFFFFF;
+}
+.multi-language , .multi-currency{
+    width: 44px;
+    display: flex;
+    gap: 6px;
+}
+.multi-language span , .multi-currency span{
+    font-family: public Sans;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.middle-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 88px;
+    padding: 20px 300px;
+    background-color: #1B6392;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 177px;
+    height: 48px;
+    gap: 8px;
+}
+.logo h3{
+    display: inline-block;
+    width: 121px;
+    font-family: Public Sans;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+.input-frame{
+    display: flex;
+    justify-content: space-between;
+    width: 646px;
+    height: 48px;
+    padding: 14px 20px;
+    gap: 8px;
+    background-color: #FFFFFF;
+}
+.shoping-icons{
+    width: 144px;
+    gap: 24px;
+    display: flex;
+}
+.bottom-nav{
+    width: 100%;
+    height: 80px;
+    padding: 16px 300px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side{
+    width: 695px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-side-bottoms-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.phone-number{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-number a {
+    font-size: 18px;
+    color: #191C1F;
+}
+.header-widgets{
+display: flex;
+width: 1320px;
+height: 520px;
+gap: 24px; 
+margin: 0px 300px;
+border: 2px solid black;
+}
+.Xbox{
+    display: flex;
+    align-items: center;
+    width: 872px;
+    height: 520px;
+    border-radius: 6px;
+    background-color: #F2F4F5;
+}
+.content-box{
+    width: 356px;
+    height: 224px;
+    padding-left: 56px;
+    gap: 24px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+.heading img{
+    width: 24px;
+    height: 2px;
+    border: 2px solid #2DA5F3;
+}
+.heading h5{
+    font-family:  Public Sans;
+    font-weight: 600;
+    font-size: 14px;
+    color:#2484C2;
+    line-height: 20px;
+}
+.content-box h2{
+    font-family: Public Sans;
+    font-weight: 600;
+    font-size: 43px;
+    color:#191C1F;
+    line-height: 56px;
+}
+.content-box p{
+    font-family: Public Sans;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475156;
+    text-align: left;
+    font-size: 14px;
+}
+.content-box button{
+    width: 191px;
+    height: 56px;
+    padding: 0px 32px;
+    background-color: #FA8232;
+    color: #FFFFFF;
+    border-radius: 3px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-top: 20px;
+}
+.dots{
+    width: 46px;
+    height: 10px;
+    gap: 8px;
+    padding-top: 100px;
+}
+.image-box{
+  display: flex;
+   width: 368px;
+   height: 408px;
+   padding-top: 56px;
+  padding-left: 148px;
+  position: relative;
+}
+.price{
+    width: 101px;
+    height: 100px;
+    border: 4px solid #FFFFFF;
+    border-radius: 100px;
+    background-color: #2DA5F3;
+    position: absolute;
+    transform: translate(220%, -21%);
+    color: #FFFFFF;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /* main section */
+
+.broadcrumb{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #F2F4F5;
+    padding-left: 300px;
+}
+.breadcumb{
+    display: flex;
+    align-items: center;
+    /* width: 199px; */
+    height: 20px;
+    gap: 8px;
+}
+.FAQs-container{
+width: 100%;
+height: 872px;
+padding: 72px 300px;
+gap: 136px;
+}
+.Faqs{
+    width: 760px;
+    height: 728px;
+    gap: 40px; 
+}
+.Faqs h1{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #191C1F;
+    margin-bottom: 40px;
+}
+.Faqs-box{
+    width: 760px;
+    /* height: 312px; */
+    margin-bottom: 24px;
+    border: 1px solid #E4E7E9;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+} 
+.faqs-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 760px;
+    height: 64px;
+    border-radius: 4px 4px 0px 0px;
+    padding: 20px 24px;   
+}
+.faqs-header h3{
+    font-weight: 500
+    ;font-size: 18px;
+    line-height: 24px;
+    color:  #191C1F;
+}
+.faqs-content{
+    display: none;
+    width: 712px;
+    height: 235px;
+    gap: 16px;
+    padding: 0px 16px;
+}
+.active {
+    display: block;
+}
+.faqs-content p{
+    height: 80px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #475156;
+    text-align: start;
+    margin-bottom: 24px 0px;
+}
+.faqs-content ul li{
+    margin: 24px 0 0 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    color: #475156;
+}
+
