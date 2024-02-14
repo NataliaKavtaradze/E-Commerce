@@ -101,7 +101,7 @@
             <div class="Faqs-box">
                 <div class="faqs-header">
                     <h3>Suspendisse ultrices pharetra libero sed interdum.</h3>
-                    <img id="myBtn" src="../homepage/images/Plus.png" alt="">
+                    <img class="myBtn" src="../homepage/images/Plus.png" alt="">
                  </div>
                 <div class="faqs-content">
                     <p>Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
@@ -117,7 +117,7 @@
             <div class="Faqs-box">
                 <div class="faqs-header">
                     <h3>Fusce molestie condimentum facilisis.</h3>
-                    <img id="myBtn" src="../homepage/images/Plus.png" alt="">
+                    <img class="myBtn" src="../homepage/images/Plus.png" alt="">
                  </div>
                 <div class="faqs-content">
                     <p>Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
@@ -133,7 +133,7 @@
             <div class="Faqs-box">
                 <div class="faqs-header">
                     <h3>Quisque quis nunc quis urna tempor lobortis vel non orci.</h3>
-                    <img id="myBtn" src="../homepage/images/Plus.png" alt="">
+                    <img class="myBtn" src="../homepage/images/Plus.png" alt="">
                  </div>
                 <div class="faqs-content">
                     <p>Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
@@ -149,7 +149,7 @@
             <div class="Faqs-box">
                 <div class="faqs-header">
                     <h3>Donec rutrum ultrices ante nec malesuada. In accumsan eget nisi a rhoncus.</h3>
-                    <img id="myBtn" src="../homepage/images/Plus.png" alt="">
+                    <img class="myBtn" src="../homepage/images/Plus.png" alt="">
                  </div>
                 <div class="faqs-content">
                     <p>Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
@@ -165,7 +165,7 @@
             <div class="Faqs-box">
                 <div class="faqs-header">
                     <h3>Nulla sed sapien maximus, faucibus massa vitae.</h3>
-                    <img id="myBtn" src="../homepage/images/Plus.png" alt="">
+                    <img class="myBtn" src="../homepage/images/Plus.png" alt="">
                  </div>
                 <div class="faqs-content">
                     <p>Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
@@ -182,19 +182,14 @@
 </main>
 
  <script>
-    const btn= document.getElementById("myBtn");
-     
-      btn.addEventListener("click", myFunction);
-     
-      function  myFunction(){
-       const content = document.querySelector('.faqs-content');
-
-       content.classList.toggle("active");
-       }
+    const btn= document.querySelectorAll(".myBtn");
+    const content = document.querySelector('.faqs-content');
    
-    
-    
-    
+     btn.forEach((item) =>{
+         item.addEventListener("click",  () =>{
+            content.classList.toggle("active");
+         });
+     });
  </script>
 </body>
 </html>
