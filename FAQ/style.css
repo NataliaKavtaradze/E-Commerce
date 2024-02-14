@@ -237,7 +237,10 @@ border: 2px solid black;
     height: 20px;
     gap: 8px;
 }
+
+                             /* FAQ section */
 .FAQs-container{
+    display: flex;
 width: 100%;
 height: 872px;
 padding: 72px 300px;
@@ -304,3 +307,57 @@ gap: 136px;
     color: #475156;
 }
 
+.support{
+width: 424px;
+height: 456px;
+border-radius: 4px;
+padding: 32px;
+background-color:#FBF4CE;
+}
+.support_heading h3{
+ width: 360px; 
+ height: 24px;  
+font-size: 18px;
+line-height: 24px;
+color: #191C1F;
+padding-bottom: 35px;
+}
+.support_heading p{
+    width: 360px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #475156;
+}
+.support_forms{
+    width: 360px;
+    height: 200px;
+    padding-top: 35px;
+    
+}
+.support_forms input{
+    width: 360px;
+    border-radius: 2px;
+    border: 1px solid #F7E99E; 
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #77878F;
+}
+.support_forms textarea{
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #F7E99E; 
+    color: #77878F;
+}
+.support button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 191px;
+    height: 48px;
+    background-color: #FA8232;
+    border: none;
+    margin-top: 65px;
+    color: #FFFFFF;
+}
