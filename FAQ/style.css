@@ -424,7 +424,7 @@ gap: 24px;
     height: 260px;
     gap: 12px;
 }
-.top_category h2{
+.top_category h2 {
     padding-bottom: 15px;
     font-weight: 500;
     font-size: 16px;
@@ -432,7 +432,8 @@ gap: 24px;
     color: #FFFFFF;
 }
 .item{
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
     width: 153px;
     height: 224px;
  }
@@ -441,10 +442,72 @@ gap: 24px;
     font-size: 14px;
     line-height: 20px;
     color: #929FA5;
-    padding: 6px 0px;
+    padding: 4px 0px;
 }
 .brows_All_product{
     display: flex;
     align-items: center;
     gap: 8px;
 }
+.quick_links{
+    width: 200px;
+    height: 260px;
+    gap: 12px;
+}
+.quick_links h2{
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.quick_links a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #929FA5;
+    padding: 4px 0px;
+}
+.quick_links_items{
+    display: flex;
+    flex-direction: column;
+}
+.download_app{
+    width: 200px;
+    height: 192px;
+    gap: 18px;
+} 
+.download_app h2{
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.google_play{
+    display: flex;
+    width: 176px;
+    height: 69px;
+    border-radius: 3px;
+    padding: 16px 20px;
+    gap: 16px;
+    background-color: #303639;
+} 
+.google_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.google_wrapper a{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.play {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
