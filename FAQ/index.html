@@ -195,13 +195,49 @@
         </div>
     </div>
 </main>
+<footer>
+    <div class="Clicon_Ecommerce">
+        <div class="e-commerce_logo">
+            <img src="../homepage/images/Icon_orange.png" alt="">
+            <span>CLICON</span>
+        </div>
+        <div class="contact-info">
+            <div class="phone_number">
+                <h4>Customer Supports:</h4>
+                <h3>(629) 555-0129</h3>
+            </div>
+                <h3>4517 Washington Ave. Manchester, Kentucky 39495</h3>
+                <h4 style="padding-top: 10px;">info@kinbo.com</h4>
+        </div>
+    </div>
+    <div class="top_category">
+        <h2>TOP CATEGORY</h2>
+        <div class="item">
+           <a href="">Computer & Laptop</a> 
+           <a href="">SmartPhone</a>
+           <a href="">Headphone</a>
+           <div>
+                <img src="../homepage/images/Devider_orange.png" alt="">
+                <a href="">Accessories</a>
+            </div>
+                <a href="">Camera & Photo</a>
+                <a href="">TV & Homes</a>
+            <div class="brows_All_product">
+                 <a href="">Browse All Product</a>
+                 <img src="../homepage/images/ArrowRight_orange.png" alt="">
+           </div>
+        </div>
+    </div>
+
+</footer>
 
  <script>
-    const btn= document.querySelectorAll(".myBtn");
+    const faqs_header = document.querySelectorAll(".faqs-header");
     const content = document.querySelector('.faqs-content');
    
-     btn.forEach((item) =>{
-         item.addEventListener("click",  () =>{
+     faqs_header.forEach((item) =>{
+         item.addEventListener("click",  (e) =>{
+            e.target.style.backgroundColor ="red";
             content.classList.toggle("active");
          });
      });
