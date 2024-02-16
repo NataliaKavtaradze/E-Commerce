@@ -257,15 +257,29 @@
 </footer>
 
  <script>
-    const faqs_header = document.querySelectorAll(".faqs-header");
-    const content = document.querySelector('.faqs-content');
+    const faqs_box = document.querySelectorAll(".Faqs-box");
    
-     faqs_header.forEach((item) =>{
-         item.addEventListener("click",  (e) =>{
-            e.target.style.backgroundColor ="red";
-            content.classList.toggle("active");
-         });
-     });
+    faqs_box.forEach((item)=>{
+       const trigger = item.querySelector(".faqs-header");
+       const content = item.querySelector(".faqs-content");
+       const icon = trigger.querySelector(".myBtn");
+       
+          
+       trigger.addEventListener("click", ()=>{
+        content.classList.toggle("active");
+                
+        if (content.classList.contains("active")) {
+            trigger.style.backgroundColor = "#FA8232";
+             icon.src="../homepage/images/Minus.png"
+        } else {
+             trigger.style.backgroundColor = "";
+             icon.src="../homepage/images/Plus.png"; 
+        }
+       })
+    })
+
+ 
+
  </script>
 </body>
 </html>
