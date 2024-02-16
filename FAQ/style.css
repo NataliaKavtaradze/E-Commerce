@@ -362,11 +362,12 @@ padding-bottom: 35px;
     color: #FFFFFF;
 }
                  /* footer */
-footer{
+.footer_wrapper{
     display: flex;
     width: 100%;
     height: 404px;
     padding: 72px 300px;
+    gap: 10px;
     background-color: #191C1F;
 }
 .Clicon_Ecommerce{
@@ -484,7 +485,11 @@ gap: 24px;
     line-height: 24px;
     color: #FFFFFF;
 }
-.google_play{
+.links_wrapper{
+    width: 176px;
+    height: 150px;
+}
+.google_play, .App_Store{
     display: flex;
     width: 176px;
     height: 69px;
@@ -492,22 +497,71 @@ gap: 24px;
     padding: 16px 20px;
     gap: 16px;
     background-color: #303639;
+    margin-bottom: 8px;
 } 
-.google_wrapper{
+.info{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 88px;
+    height: 37px;
+    gap: 4px;
 }
-.google_wrapper a{
-    font-weight: 400;
+.get_it_now{
     font-size: 11px;
+    font-weight: 400px;
     line-height: 13px;
     color: #FFFFFF;
 }
-.play {
+.store{
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
 }
+.popular_tag{
+    width: 312px;
+    height: 194px;
+    gap: 18px;
+}
+.popular_tag h2{
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.tag_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 312px;
+    height: 152px;
+    gap: 8px;
+}
+.small_box{
+    height: 32px;
+    padding: 0px 12px;
+    gap: 10px;
+    border: 1px solid #303639;
+    border-radius: 2px;
+}
+.tag_name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.copyright{
+    width: 100%;
+    height: 68px;
+    padding: 24px 300px;
+    background-color: #191C1F;
+    border-top: 1px solid #303639;
+}
+.copyright h6{
+    font-size: 14px;
+    font-weight: 400px;
+    text-align: center;
+    color: #ADB7BC;
+}
+
 
