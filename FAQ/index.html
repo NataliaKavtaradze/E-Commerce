@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Inter:wght@400;500;600&family=Public+Sans:wght@600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
-    </style>
 </head>
 <body>
 <header>
@@ -28,13 +24,24 @@
                 </div>
               </div>  
                  <div class="line"></div>
-                 <div class="multi-language">
+                 <div class="dropdown">
                     <span>Eng</span>
-                    <img src="./images/CaretDown.png" alt="">
+                    <button onclick="myFunction()" class="dropbtn"><img class="caret_down" src="../homepage/images/CaretDown.png" alt=""></button>
+                    
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#"><img src="../homepage/images/English.png" style="padding-right: 8px;" alt=""></a>
+                                <a href="#"><img src="../homepage/images/mandarin.png" alt=""></a>
+                                <a href="#"><img src="../homepage/images/russia.png" alt=""></a>
+                            </div>
                  </div>
-                 <div class="multi-currency">
+                 <div class="dropdown">
                     <span>USD</span>
-                    <img src="./images/CaretDown.png" alt=""">
+                    <button onclick="click_USD()" class="dropbtn"><img class="caret_down" src="../homepage/images/CaretDown.png" alt=""></button>
+                    
+                            <div id="myDropdown_USD" class="usd_dropdown">
+                                <a href="#"><img src="../homepage/images/dolar.png" alt=""></a>
+                                <a href="#"><img src="../homepage/images/evro.png" alt=""></a>
+                            </div>
                  </div>
             </div>
         </nav>
@@ -186,7 +193,7 @@
             <div class="support_forms">
                 <input type="text"  value="Email address">
                 <input type="text" value="Subject">
-                <textarea name="text"  cols="34" rows="3">Message (Optional)</textarea>
+                <textarea name="text"  >Message (Optional)</textarea>
             </div>
             <button>Send message
                 <img src="../homepage/images/whit errow.png" alt="">
@@ -334,6 +341,20 @@
         }
        })
     })
+ 
+                /* When the user clicks on the button,
+                    toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function  click_USD() {
+  document.getElementById("myDropdown_USD").classList.toggle("show");
+}
+
+const arrow = document.getElementsByClassName("caret_down")
+    
+
 
  
 
