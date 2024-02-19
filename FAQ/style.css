@@ -79,7 +79,7 @@ a{
     height: 124px;
     width: 180px;
     top: 45px;
-    left: 1170px;
+    left: 1265px;
     border-radius: 3px;
     border: 1px solid #E4E7E9;
     display: none;
@@ -90,7 +90,7 @@ a{
     width: 180px;
     height: 88px;
     top: 45px;
-    left: 1355px;
+    left: 1455px;
     border-radius: 3px;
     border: 1px solid #E4E7E9;
     display: none;
@@ -99,7 +99,7 @@ a{
  }
 .dropdown-content a, .usd_dropdown a {
     color: black;
-    gap: 10px
+    gap: 10px;
     text-decoration: none;
     display: block;
   }

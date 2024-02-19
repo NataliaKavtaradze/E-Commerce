@@ -26,7 +26,7 @@
                  <div class="line"></div>
                  <div class="dropdown">
                     <span>Eng</span>
-                    <button onclick="myFunction()" class="dropbtn"><img class="caret_down" src="../homepage/images/CaretDown.png" alt=""></button>
+                    <button onclick="myFunction()" class="dropbtn"><img src="../homepage/images/CaretDown.png" alt=""></button>
                     
                             <div id="myDropdown" class="dropdown-content">
                                 <a href="#"><img src="../homepage/images/English.png" style="padding-right: 8px;" alt=""></a>
@@ -36,7 +36,7 @@
                  </div>
                  <div class="dropdown">
                     <span>USD</span>
-                    <button onclick="click_USD()" class="dropbtn"><img class="caret_down" src="../homepage/images/CaretDown.png" alt=""></button>
+                    <button onclick="click_USD()" class="dropbtn"><img  src="../homepage/images/CaretDown.png" alt=""></button>
                     
                             <div id="myDropdown_USD" class="usd_dropdown">
                                 <a href="#"><img src="../homepage/images/dolar.png" alt=""></a>
@@ -344,20 +344,25 @@
  
                 /* When the user clicks on the button,
                     toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function  click_USD() {
-  document.getElementById("myDropdown_USD").classList.toggle("show");
-}
-
-const arrow = document.getElementsByClassName("caret_down")
     
+    function myFunction() {
+  // Toggle visibility of the dropdown
+  const dropdown = document.getElementById("myDropdown");
+  dropdown.classList.toggle("show");
 
+  // Rotate the arrow
+  const arrow = document.querySelector(".dropbtn"); // Assuming there's only one element with class "dropbtn"
+  arrow.style.transform = dropdown.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
+}
+       
+        // rotate usd buttons arrow
 
- 
-
+    function click_USD(){
+        const dropdown = document.getElementById("myDropdown_USD");
+        dropdown.classList.toggle("show");
+        const arrow = document.querySelector(".dropbtn"); // Assuming there's only one element with class "dropbtn"
+        arrow.style.transform = dropdown.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
+}
  </script>
 </body>
 </html>
