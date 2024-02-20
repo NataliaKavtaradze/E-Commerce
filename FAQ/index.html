@@ -36,7 +36,7 @@
                  </div>
                  <div class="dropdown">
                     <span>USD</span>
-                    <button onclick="click_USD()" class="dropbtn"><img  src="../homepage/images/CaretDown.png" alt=""></button>
+                    <button onclick="click_USD()" class="dropbtn_USD"><img  src="../homepage/images/CaretDown.png" alt=""></button>
                     
                             <div id="myDropdown_USD" class="usd_dropdown">
                                 <a href="#"><img src="../homepage/images/dolar.png" alt=""></a>
@@ -315,12 +315,16 @@
     </div>
  </div>
  <div class="copyright">
-    <h6>Kinbo - eCommerce Template © 2021. Design by Templatecookie</h6>
+    <h6>Kinbo - eCommerce Template © <span id="copyright-year"></span>. Design by Templatecookie</h6>
 </div>
 
 </footer>
 
  <script>
+    //  copyright 
+
+    document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+
     const faqs_box = document.querySelectorAll(".Faqs-box");
    
     faqs_box.forEach((item)=>{
@@ -351,17 +355,19 @@
   dropdown.classList.toggle("show");
 
   // Rotate the arrow
-  const arrow = document.querySelector(".dropbtn"); // Assuming there's only one element with class "dropbtn"
+  const arrow = document.querySelector(".dropbtn"); 
   arrow.style.transform = dropdown.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
 }
        
         // rotate usd buttons arrow
 
+    
     function click_USD(){
+        
         const dropdown = document.getElementById("myDropdown_USD");
         dropdown.classList.toggle("show");
-        const arrow = document.querySelector(".dropbtn"); // Assuming there's only one element with class "dropbtn"
-        arrow.style.transform = dropdown.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
+        const arrowUSD = document.querySelector(".dropbtn_USD");
+        arrowUSD.style.transform = dropdown.classList.contains("show") ? "rotate(180deg)" : "rotate(0deg)";
 }
  </script>
 </body>
