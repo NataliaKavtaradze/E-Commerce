@@ -55,31 +55,30 @@ a{
     background-color: #FFFFFF;
 }
 .dropdown{
-    width: 44px;
-    display: flex;
-    gap: 6px;
-}
-.dropdown  span{
-    font-family: public Sans;
-    font-weight: 400;
-    color: #FFFFFF;
+    position: relative;
+    width: 50px;
+    height: 30px;
 }
 .dropbtn, .dropbtn_USD {
+    display: flex;
+    gap: 8px;
     width: 12px;
     height: 12px;
     background-color: #1B6392;
     border: none;
     cursor: pointer;
+    font-family: public Sans;
+    font-weight: 400;
+    color: #FFFFFF;
   }
-  .dropbtn img, .dropbtn_USD img{
-    color: white;
- rotate: 180deg;
+#dropbtn_arrow, #dropbtn_arrow_usd{
+    rotate: 180deg;
   }
 .dropdown-content {
     height: 124px;
     width: 180px;
     top: 45px;
-    left: 950px;
+    left: -130px;
     border-radius: 3px;
     border: 1px solid #E4E7E9;
     display: none;
@@ -90,7 +89,6 @@ a{
     width: 180px;
     height: 88px;
     top: 45px;
-    left: 1155px;
     border-radius: 3px;
     border: 1px solid #E4E7E9;
     display: none;
@@ -154,7 +152,7 @@ a{
     align-items: center;
 }
 .left-side{
-    width: 695px;
+    width: 850px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -337,6 +335,7 @@ gap: 136px;
     display: block;
 }
 .faqs-content p{
+    padding-top: 15px;
     height: 80px;
     font-weight: 400;
     font-size: 14px;
